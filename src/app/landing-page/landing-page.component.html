@@ -1,0 +1,65 @@
+<ng-container *ngIf="data$ | async as data">
+    <div *ngIf="data.uid === 'ElectronicsHompageSplashBannerComponent'" class="top-banner">
+        <span style="color: #666666; font-size: 14px;">Order by <b>12:00 PM PST</b> for overnight shipping</span>
+    </div>
+    <ng-container *ngIf="data.uid === 'ElectronicsHompageFreeDelBannerComponent'">
+        <div class="banner-container">
+            <div class="sub-container">
+                <span class="banner-heading">Manage your flu inventory on myfluvaccine.com</span> <br />
+                <span class="sub-heading">Browse an expensive product portfolio of vaccines, flu pamphlets and other
+                    resources</span> <br />
+                <button class="button">Visit my flu vaccine</button>
+            </div>
+            <div class="sub-container1">
+                <img style="width: 100%;" src="../../assets/img-fff.svg" alt="logo" />
+            </div>
+        </div>
+    </ng-container>
+</ng-container>
+<cx-generic-link *ngIf="data$ | async as data" [url]="data.urlLink" [target]="getTarget(data)">
+<ng-container *ngIf="data.uid === 'ElectronicsHompageSplashBannerComponent'">
+    <img style="width: 100%;" src="../../assets/top-banner.svg" alt="logo" />
+</ng-container>
+<ng-container *ngIf="data.uid !== 'ElectronicsHompageSplashBannerComponent' && data.uid !== 'SiteLogoComponent'">
+    <p class="headline" *ngIf="data.headline" [innerHTML]="data.headline"></p>
+    <cx-media [container]="data.media"></cx-media>
+    <p class="content" *ngIf="data.content" [innerHTML]="data.content"></p>
+    </ng-container>
+    <ng-container *ngIf="data.uid === 'SiteLogoComponent'">
+        <img style="width: 25vh;" src="../../assets/BioIcon.svg" alt="logo" />
+    </ng-container> 
+    <ng-container *ngIf="data.uid === 'ElectronicsHompageShipmentBannerComponent'">
+    </ng-container>
+</cx-generic-link>
+
+<!--  <ng-container style="text-align: center;" *ngIf="result.uid === 'ElectronicsHompageLightFamBannerComponent'">
+    <img style="width: 100%;" src="../../assets/dabur.jpg" alt="logo" />
+</ng-container>
+
+<ng-container *ngIf="result.uid === 'ElectronicsHompageLightFamTextBannerComponent'">
+    <img style="width: 100%;" src="../../assets/Dettol.jpg" alt="logo" />
+</ng-container>
+
+<ng-container *ngIf="result.uid === 'ElectronicsHompageCamcordersChildBannerComponent'">
+    <img style="width: 100%;" src="../../assets/nivea.jpg" alt="logo" />
+</ng-container>
+<ng-container *ngIf="result.uid === 'ElectronicsHompageCamcordersBannerComponent'">
+    <img style="width: 100%;" src="../../assets/vicks.jpg" alt="logo" />
+</ng-container>
+<ng-container *ngIf="result.uid === 'ElectronicsHompageSmDiscountBannerComponent'">
+    <img style="width: 100%;" src="../../assets/icon1.svg" alt="logo" />
+</ng-container>
+<ng-container *ngIf="result.uid === 'ElectronicsHompageShopBannerComponent'">
+    <img style="width: 100%;" src="../../assets/icon2.svg" alt="logo" />
+</ng-container>
+<ng-container *ngIf="result.uid === 'ElectronicsHompageShipmentBannerComponent'">
+    <img style="width: 100%;" src="../../assets/icon3.svg" alt="logo" />
+</ng-container>
+<ng-container *ngIf="result.uid === 'ElectronicsHompageServiceBannerComponent'">
+    <img style="width: 100%;" src="../../assets/icon4.svg" alt="logo" />
+</ng-container>
+
+ <ng-container *ngIf="result.uid === 'ElectronicsHompageServiceBannerComponent'" >
+    <cx-media [container]="data.media"></cx-media>
+</ng-container> -->
+

@@ -1,0 +1,68 @@
+header {
+    background-color: var(--fff-white) !important;
+    color: var(--fff-white) !important;
+    display: block;
+    margin: 0;
+}
+header .header {
+    max-width: 94% !important;
+}
+header .SiteLogo {
+    width: 200px !important;
+}
+cx-page-layout cx-page-slot, cx-page-layout.CategoryPageTemplate, 
+cx-page-layout.ProductListPageTemplate, cx-page-layout.ProductGridPageTemplate {
+    max-width: 100% !important;
+}
+cx-page-layout.ProductListPageTemplate .ProductLeftRefinements {
+    max-width: 25% !important;
+}
+cx-searchbox label {
+    border-radius: 30px;
+    background: var(--fff-white);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+    border: 1px solid var(--fff-gray-light);
+    color: var(--fff-gray-default);
+}
+cx-site-context-selector select {
+    background-color: var(--fff-white) !important;
+}
+cx-site-context-selector label {
+    color: var(--fff-blue-default) !important;
+}
+header .SiteContext, header .SiteLinks {
+    color: var(--fff-blue-default) !important;
+}
+cx-page-layout.footer {
+    background-color: var(--fff-blue-dark) !important;
+    color: white !important;
+}
+cx-mini-cart a {
+    background: var(--fff-blue-default) !important;
+}
+cx-login a {
+    color: white !important;
+}
+cx-navigation-ui.flyout > nav > span {
+    color: var(--fff-blue-default) !important;
+}
+cx-navigation-ui.flyout span a, cx-navigation-ui.flyout cx-generic-link a {
+    color: var(--fff-blue-default) !important;
+}
+cx-navigation-ui.flyout > nav {
+    margin-right: 24px;
+    font-size: 14px;
+}
+cx-navigation-ui {
+    justify-content: center;
+}
+cx-page-layout.LandingPage2Template cx-page-slot.Section1 {
+    margin-top: 0px !important;
+}
+cx-page-layout.footer, .cx-notice {
+    background-color: transparent !important;
+    color: var(--fff-gray-default) !important;
+}
+cx-footer-navigation cx-navigation-ui span {
+    color: var(--fff-blue-dark);
+}

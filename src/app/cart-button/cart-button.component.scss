@@ -1,0 +1,36 @@
+.button-login {
+    color: var(--fff-blue-default);
+    margin-right: 16px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    border-radius: 50px;
+    background: var(--fff-gray-light);
+    padding: 16px 30px;
+    border: none;
+    font-size: 14px;
+}
+
+.button-register {
+    color: var(--fff-blue-default);
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    border-radius: 50px;
+    background: #fff;
+    padding: 8px 24px;
+    border: none;
+    font-size: 14px;
+}
+
+.button-cart {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    border-radius: 50px;
+    background: var(--fff-blue-default);
+    padding: 8px 24px;
+    border: none;
+    font-size: 16px;
+    height: 50px;
+    margin-top: 5px;
+}

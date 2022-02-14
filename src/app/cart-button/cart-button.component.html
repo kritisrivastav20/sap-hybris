@@ -1,0 +1,14 @@
+<div *ngIf = "!isLoggedIn && !showCart">
+    <button class="button-register" (click) = "goToPage('register')">Register
+    <i class="uil uil-airplay"></i>    
+    </button>
+    <button class="button-login" (click) = "goToPage('signIn')">Sign In</button>
+</div>
+<div style="display: flex; flex-direction: row;" *ngIf = "isLoggedIn && showCart">
+    <div *ngIf="user$ | async as user">
+        <cx-page-slot position="HeaderLinks"></cx-page-slot>
+    </div>
+<button class="button-cart">Add to cart</button>
+</div>
+<ng-container *ngIf="showCart && !isLoggedIn">
+</ng-container>

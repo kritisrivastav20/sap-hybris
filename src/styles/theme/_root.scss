@@ -1,0 +1,48 @@
+:root {
+  /* Font styles */
+  --fff-small-font-size: 14px;
+  --fff-medium-font-size: 16px;
+  --fff-large-font-size: 22px;
+  --fff-subhead-font-size: 32px;
+  --fff-smhead-font-size: 40px;
+  --fff-lghead-font-size: 72px;
+  --fff-mdhead-font-size: 48px;
+  --fff-page-width-max: 96%;
+ /* Default colors */
+  --fff-blue-default: #0064A1;
+  --fff-blue-legacy: #51B8FF;
+  --fff-blue-dark: #003159;
+  --fff-gray-default: #666666;
+  --fff-gray-medium: #B0B3B2;
+  --fff-gray-light: #E4E4E4;
+  --fff-gray-offwhite: #F9F9F9;
+  --fff-white: #FFFFFF;
+  /* Button styles */
+  --fff-button-default-border-radius: 10px;
+  --fff-button-secondary-border-radius: 2px;
+  --fff-button-default-color: #003159; 
+  --fff-button-hover-color: #0064A1; 
+  --fff-button-disabled-color: #B0B3B2;
+  --fff-button-white-color: #B0B3B2;  
+}
+
+body {
+  font-family: "Din-regular";
+  background: var(--fff-gray-offwhite) !important;
+}
+
+@font-face {
+  font-family: "Din-regular";
+  src: local("Din-regular"),
+    url(../../assets/fonts/DIN.ttf) format("opentype");
+}
+@font-face {
+  font-family: "Din-medium";
+  src: local("Din-medium"),
+    url(../../assets/fonts/DIN-Medium.ttf) format("opentype");
+}
+@font-face {
+  font-family: "Din-bold";
+  src: local("Din-bold"),
+    url(../../assets/fonts/DIN-Bold.ttf) format("opentype");
+}
